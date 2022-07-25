@@ -1,13 +1,57 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #F4F5FA !important;
+  color: #000000 !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.base {
+  display: flex;
+}
+
+.navbar {
+  height: 100vh;
+  width: 200px;
+  font-size: 20px;
+  border-right: rgb(150, 122, 122) solid 1px;
+  position: fixed;
+  top: 0;
+}
+
+.my-masonry-grid {
+  display: -webkit-box; /* Not needed if autoprefixing */
+  display: -ms-flexbox; /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px; /* gutter size offset */
+  width: auto;
+}
+.my-masonry-grid_column {
+  padding-left: 30px; /* gutter size */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div { /* change div to reference your elements you put in <Masonry> */
+  margin-bottom: 30px;
+}
+
+.cardlist {
+  margin: 50px;
+}
+
+.cart {
+  color: blue;
+  flex: 1;
+  align-items: left;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.cardImg {
+  margin: 10px;
+  object-fit: fill;
+}
+
+.card {
+  margin: auto;
+  width: 16rem;
 }
